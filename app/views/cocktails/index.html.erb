@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('logo.jpeg');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h3 id="cocktail_name"><%= link_to cocktail.name, cocktail %></h3>
+          </div>
+          <a class="card-link" href="/cocktails/#{cocktail.id}" ></a>
+        </div>
+      </div>
+      <% end %>
+</div>

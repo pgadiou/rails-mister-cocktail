@@ -1,0 +1,12 @@
+<div class="container">
+  <h2><%= @cocktail.name %></h2>
+  <%= link_to "Add dose to cocktail recipe", new_cocktail_dose_path(params[:id])%>
+  <% Dose.where(cocktail_id:params[:id]).each do |dose| %>
+  <div class="card">
+    <p><%= dose.description %></p>
+    <p><%= dose.ingredient.name %></p>
+    <p><%= link_to dose.delete, dose.destroy %></p>
+  </div>
+<% end %>
+
+</div>

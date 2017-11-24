@@ -1,0 +1,10 @@
+<div class="container">
+  <%= simple_form_for [@dose.cocktail, @dose] do |f| %>
+    <%= f.input :description %>
+    <%= select_tag 'ingredient_id', options_from_collection_for_select(
+      Ingredient.all,
+      :id, :name),
+      class: 'select2' %>
+    <%= f.submit "add a dose", class: "btn btn-primary" %>
+  <% end %>
+</div>
