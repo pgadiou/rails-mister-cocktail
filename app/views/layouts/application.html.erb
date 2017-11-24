@@ -14,7 +14,7 @@
     <div class="navbar-wagon">
       <!-- Logo -->
       <%= link_to "/cocktails", class: "navbar-wagon-brand" do %>
-        <%= image_tag "logo.jpeg" %>
+        <%#= image_tag "logo.jpeg" %>
       <% end %>
 
       <!-- Right Navigation -->
@@ -29,21 +29,22 @@
 
     <%= yield %>
 
+
+    <div class="footer">
+      <div class="footer-links">
+      <a href="#"><i class="fa fa-github"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        Recommend Mister Cock to your friend!
+      </div>
+      </div>
+    </div>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application' %>
-
-  <div class="footer">
-    <div class="footer-links">
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-    <div class="footer-copyright">
-    Recommend Mister Cock to your friend!
-    </div>
-  </div>
-  </div>
   </body>
 </html>
