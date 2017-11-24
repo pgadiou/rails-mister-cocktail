@@ -13,3 +13,22 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+@import "components/footer";
+@import "components/navbar";
+@import "components/card";
+@import "components/banner";
+@import "components/container";
+
+#cocktail_bg {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4)),url('https://fthmb.tqn.com/QrLqgThUKbMyZSDlweq5IN0g_WA=/768x0/filters:no_upscale()/sunset-free-beach-wallpapers-wallpaperstock-587fbdf63df78c17b6b0f26c.jpg'), linear-gradient(#67b26f,
+#4ca2cd);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  opacity: 1;
+}
+
+body {
+  font-weight: lighter;
+  color: rgb(255, 255, 255)
+}

@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <div id="cocktail_bg">
     <div class="navbar-wagon">
       <!-- Logo -->
       <%= link_to "/cocktails", class: "navbar-wagon-brand" do %>
@@ -20,11 +21,29 @@
       <div class="navbar-wagon-right hidden-xs hidden-sm"></div>
 
       <!-- Links -->
-      <%= link_to "Add new cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-link" %>
+
     </div>
+
+
+
+
     <%= yield %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application' %>
+
+  <div class="footer">
+    <div class="footer-links">
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+    Recommend Mister Cock to your friend!
+    </div>
+  </div>
+  </div>
   </body>
 </html>

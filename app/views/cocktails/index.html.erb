@@ -1,13 +1,19 @@
-<div class="container">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1492187024/articles/2015/01/11/beach-resort-cocktails-suck-let-s-make-them-brilliant/150110-kulp-tragic-beach-cocktails-tease_zdvdkj');">
+  <div class="banner-content">
+    <h1>Mister Cocktail</h1>
+    <p>The Ultimate Cocktail Experience</p>
+    <%= link_to "Contribute - add your own cocktail recipe", new_cocktail_path, class: "btn btn-primary btn-lg" %>
+  </div>
+</div>
+<div class="container" id="cocktail-display">
   <div class="row">
       <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('logo.jpeg');">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://d1bv4heaa2n05k.cloudfront.net/posts%2FQP95Qo8J865uZxfdK%2F1495100721041-BIKINI+COCKTAIL+FINAL.jpg');">
           <div class="card-category">Popular</div>
           <div class="card-description">
             <h3 id="cocktail_name"><%= link_to cocktail.name, cocktail %></h3>
           </div>
-          <a class="card-link" href="/cocktails/#{cocktail.id}" ></a>
         </div>
       </div>
       <% end %>
